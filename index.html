@@ -14,7 +14,7 @@
       display: flex;
       align-items: flex-start;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
     }
 
     .card {
@@ -23,6 +23,7 @@
       padding: 30px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       max-width: 500px;
+      width: 90%;
       text-align: center;
       margin-top: 40px;
     }
@@ -30,11 +31,13 @@
     .card h2 {
       color: #003366;
       margin-bottom: 15px;
+      font-size: 1.5em;
     }
 
     .card p {
       margin: 10px 0;
       line-height: 1.5;
+      font-size: 1em;
     }
 
     .highlight {
@@ -54,8 +57,28 @@
     }
 
     .logo {
-      width: 450px; /* aún más grande */
+      width: 100%;
+      max-width: 450px;
+      height: auto;
       margin-top: 20px;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px;
+      }
+
+      .card h2 {
+        font-size: 1.3em;
+      }
+
+      .card p {
+        font-size: 0.95em;
+      }
+
+      .logo {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -87,7 +110,7 @@
       Honda, Tolima
     </p>
 
-    <!-- Logo ahora al final -->
+    <!-- Logo al final -->
     <img src="logos.jpg" alt="Logo Cordilleras y Honda triple A" class="logo" />
   </div>
 </body>
