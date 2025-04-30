@@ -12,7 +12,7 @@
       background: #f4f8fb;
       color: #003366;
       display: flex;
-      align-items: center;
+      align-items: flex-start; /* antes era center */
       justify-content: center;
       height: 100vh;
     }
@@ -24,6 +24,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       max-width: 500px;
       text-align: center;
+      margin-top: 40px; /* se añadió este margen para bajar el contenido */
     }
 
     .card h2 {
@@ -51,17 +52,17 @@
       color: #66a000;
       font-weight: bold;
     }
-    .logo {
-  width: 300px;
-  margin-bottom: 5px;
-}
 
+    .logo {
+      width: 400px; /* antes era 300px */
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
   <div class="card">
-     <!-- Logo centrado -->
-  <img src="logos.jpg" alt="Logo Cordilleras y Honda triple A" class="logo" />
+    <!-- Logo centrado -->
+    <img src="logos.jpg" alt="Logo Cordilleras y Honda triple A" class="logo" />
 
     <h2>🔹 Carnet de Identificación</h2>
     <p>
